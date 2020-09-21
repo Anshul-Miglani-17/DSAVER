@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Anshul Gandu Hai
+## Anshul's and Arpit's project
 
 ## Available Scripts
 
