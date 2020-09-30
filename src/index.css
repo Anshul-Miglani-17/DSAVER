@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
+
 * {
-  background-color: coral;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(219, 216, 216) !important;
+}
+.collapse {
+  background-color: rgb(219, 216, 216) !important;
+}
+.main {
+  background-color: rgb(219, 216, 216) !important;
+}
+.navbar_brand {
+  font-size: 2rem !important;
+  font-family: "Playfair Display", serif;
+  background-color: rgb(219, 216, 216) !important;
+}
+
+.active_menu {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.nav-link {
+  background-color: rgb(219, 216, 216) !important;
+}
+
+.nav-link:hover {
+  color: red !important;
+}
+
+.navbar_brand:hover {
+  font-weight: bolder;
 }
