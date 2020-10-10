@@ -6,7 +6,7 @@ import web from "../src/images/logo.jpeg"
 const Contact = () => {
   return (
     <>
-      <section id="header" className="d-flex align-items-center">
+      <section id="header" className="d-flex align-items-center ">
       <div className="container-fluid nav_bg">
         <div className="row ">
           <div className="col-11 mx-auto">
@@ -17,11 +17,11 @@ const Contact = () => {
                   <p className="objective"><strong>You can contact us :-</strong></p>
                   <p>Anshul<br/>migs.anshul@gmail.com</p>
                   <p>Arpit<br/>arpitg9671@gmail.com</p>
-                  
+                  <p>Dr. Sapna Gambhir<br/>sapnagambhir@gmail.com</p>
                 </h2>
                 
               </div>
-              <div className="col-lg-6 order-1 order-lg-2 header-img">
+              <div className="col-lg-6 order-2 order-lg-2 header-img">
                 <img src={web} className="img-fluid animated" width="600" alt="Dsaver logo"/>
               </div>
             </div>

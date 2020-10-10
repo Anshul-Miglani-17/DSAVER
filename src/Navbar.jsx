@@ -5,8 +5,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid nav_bg">
-        <div className="row pl-3 pr-3">
+      
           <div className="col-12 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light ">
               <NavLink className="navbar_brand navbar-brand pl-4" to="">
@@ -69,8 +68,7 @@ const Navbar = () => {
               </div>
             </nav>
           </div>
-        </div>
-      </div>
+        
     </>
   );
 };

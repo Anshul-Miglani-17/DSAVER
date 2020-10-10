@@ -8,6 +8,7 @@ import Algorithms from "./Algorithms";
 import Contact from "./Contact";
 import About from "./About";
 import Navbar from "./Navbar";
+import Footer from "./Footer"
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route exact path="/contact" component={Contact}></Route>
         <Redirect to="/" />
       </Switch>
+      <Footer/>
     </>
   );
 };

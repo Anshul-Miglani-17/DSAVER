@@ -4,24 +4,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(247, 247, 247);
   font-family: "Roboto", sans-serif;
 }
 
 .navbar {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgb(236, 236, 236) !important;
+  background-color: rgb(235, 235, 235) !important;
 }
 .collapse {
-  background-color: rgb(236, 236, 236) !important;
+  background-color: rgb(235, 235, 235) !important;
 }
 .main {
-  background-color: rgb(236, 236, 236) !important;
+  background-color: rgb(235, 235, 235) !important;
 }
 .navbar_brand {
   font-size: 2rem !important;
   font-family: "Playfair Display", serif;
-  background-color: rgb(236, 236, 236) !important;
+  background-color: rgb(235, 235, 235) !important;
 }
 
 .active_menu {
@@ -29,7 +29,7 @@
   border-bottom: 1px solid black;
 }
 .nav-link {
-  background-color: rgb(236, 236, 236) !important;
+  background-color: rgb(235, 235, 235) !important;
 }
 
 .nav-link:hover {
@@ -76,7 +76,7 @@
 }
 
 #header .btn-get-started:hover {
-  background: rgb(175, 171, 197);
+  background: skyblue;
   color: #fff;
   font-weight: 1000;
 }
@@ -109,4 +109,8 @@
 
 .objective {
   color: rgb(117, 88, 88);
+}
+
+.foot {
+  background-color: rgb(247, 247, 247);
 }
