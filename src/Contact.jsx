@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./index.css";
-import web from "/home/anshul_m/Desktop/DSAVER/src/images/logo.jpeg"
+import web from "../src/images/logo.jpeg"
 
 const Contact = () => {
   return (
