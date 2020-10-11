@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./index.css";
-import web from "../src/images/logo.jpeg"
+import web from "../src/images/logo2.svg"
 
 const Home = () => {
   return (
     <>
     
     <section id="header" className="d-flex align-items-center">
-      <div className="container-fluid nav_bg">
+      <div className="container-fluid">
         <div className="row ">
           <div className="col-11 mx-auto">
             <div className="row pl-3" >

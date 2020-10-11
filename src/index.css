@@ -4,24 +4,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(247, 247, 247);
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
 .navbar {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-color: rgb(235, 235, 235) !important;
+  background-color: lightgreen !important;
 }
 .collapse {
-  background-color: rgb(235, 235, 235) !important;
+  background-color: lightgreen !important;
 }
 .main {
-  background-color: rgb(235, 235, 235) !important;
+  background-color: lightgreen !important;
 }
 .navbar_brand {
   font-size: 2rem !important;
   font-family: "Playfair Display", serif;
-  background-color: rgb(235, 235, 235) !important;
+  background-color: lightgreen !important;
 }
 
 .active_menu {
@@ -29,11 +29,11 @@
   border-bottom: 1px solid black;
 }
 .nav-link {
-  background-color: rgb(235, 235, 235) !important;
+  background-color: lightgreen !important;
 }
 
 .nav-link:hover {
-  color: red !important;
+  color: blue !important;
 }
 
 .navbar_brand:hover {
@@ -76,7 +76,7 @@
 }
 
 #header .btn-get-started:hover {
-  background: skyblue;
+  background: blue;
   color: #fff;
   font-weight: 1000;
 }
@@ -91,7 +91,7 @@
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   100% {
     transform: translateY(-10px);
@@ -100,7 +100,7 @@
 
 @keyframes up-down {
   0% {
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   100% {
     transform: translate(Y-10px);
@@ -112,5 +112,9 @@
 }
 
 .foot {
-  background-color: rgb(247, 247, 247);
+  background-color: #fff;
+}
+
+.cmain:hover{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
