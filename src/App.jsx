@@ -8,7 +8,12 @@ import Algorithms from "./Algorithms";
 import Contact from "./Contact";
 import About from "./About";
 import Navbar from "./Navbar";
-import Footer from "./Footer"
+import Footer from "./Footer";
+import Bubble from "./algos/Bubble";
+import Selection from "./algos/Selection";
+import Insertion from "./algos/Insertion"
+import MergeSort from "./algos/MergeSort"
+import QuickSort from "./algos/QuickSort"
 
 const App = () => {
   return (
@@ -20,6 +25,11 @@ const App = () => {
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/algo" component={Algorithms}></Route>
         <Route exact path="/algorithm" component={Algorithms}></Route>
+        <Route exact path="/algorithm/bubble" component={Bubble}></Route>
+        <Route exact path="/algorithm/Selection" component={Selection}></Route>
+        <Route exact path="/algorithm/Insertion" component={Insertion}></Route>
+        <Route exact path="/algorithm/MergeSort" component={MergeSort}></Route>
+        <Route exact path="/algorithm/QuickSort" component={QuickSort}></Route>
         <Route exact path="/algorithms" component={Algorithms}></Route>
         <Route exact path="/contact" component={Contact}></Route>
         <Redirect to="/" />
