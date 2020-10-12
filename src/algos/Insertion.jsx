@@ -7,7 +7,7 @@ const Insertion = () =>{
     return(
         <>
             <div className="my-5">
-                <h1 className="text-center">Inserion Sort</h1>
+                <h1 className="text-center">Insertion Sort</h1>
             </div>
             <div className="container-fluid ">
                 <div className="row my-5">
