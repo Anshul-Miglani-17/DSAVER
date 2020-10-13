@@ -2,6 +2,7 @@ import React from "react";
 import "../index.css";
 import web from "../images/insertion1.png";
 import Codecoll from "./Codecoll";
+import InsertionCode from "../codes/InsertionCode";
  
 const Insertion = () =>{
     return(
@@ -42,7 +43,7 @@ const Insertion = () =>{
                             <br/>
                             <br/>
                             
-                            <Codecoll/>
+                            <Codecoll code={<InsertionCode/>}/>
 
 
                             

@@ -1,7 +1,7 @@
 import React from "react";
-import "../index.css"
+import "./InsertionCode.jsx"
 
-const Code = () => {
+const InsertionCode = () => {
     var title = String.raw`
     #include<stdio.h>
     int main(){
@@ -35,4 +35,4 @@ const Code = () => {
     );
 };
 
-export default Code;
+export default InsertionCode;

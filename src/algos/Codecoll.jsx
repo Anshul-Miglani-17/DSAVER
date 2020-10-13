@@ -1,9 +1,9 @@
-import { findByDisplayValue } from "@testing-library/react";
+import { findByDisplayValue } from "@testing-library/react";  
 import React from "react";
 import "../index.css";
-import Code from "./Code";
+import InsertionCode from "../codes/InsertionCode.jsx";
  
-const Codecoll = () =>{
+const Codecoll = (props) =>{
     return(
         <>
 <div className="accordion" id="accordionExample">
@@ -19,9 +19,7 @@ const Codecoll = () =>{
     <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div className="nicheWala card-body">
 
-
-  
-    <Code/>
+    {props.code}
         
       </div>
     </div>
@@ -36,7 +34,7 @@ const Codecoll = () =>{
     </div>
     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div className="nicheWala card-body">
-        Yh nahi hua GANDU
+        Yh nahi hua
       </div>
     </div>
   </div>
