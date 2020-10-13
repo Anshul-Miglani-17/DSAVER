@@ -1,4 +1,5 @@
 import React from "react";
+import web from "../images/selectionsort.png";
 import Codecoll from "./Codecoll";
 import Selectioncode from "../codes/Selectioncode"
  
@@ -27,6 +28,9 @@ const Selection = () =>{
                                     <p className="nicheWala">Entered elements: 22 0 -90 89 17<br/>Step 1: -90 0 22 89 17 (22 and -90 exchanged position)<br/>Step 2: -90 0 22 89 17 (0 is at right place, no exchange needed)<br/>Step 3: -90 0 17 89 22 (22 and 17 exchanged position)<br/>Step 4: -90 0 17 22 89 (89 and 22 exchanged position)</p>
                                 </div>
                             </div>
+                            <br/>
+                            <p>To understand how Selection sort works, refer to the below image.    </p>
+                            <div className="d-flex justify-content-center"><img src={web} alt="Selection img"/></div>
                             <br/>
                             <Codecoll code={<Selectioncode/>}/>
 
