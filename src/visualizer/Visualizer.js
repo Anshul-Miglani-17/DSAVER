@@ -6,15 +6,35 @@ import { getMergeSortAnimations } from '../algorithmVis/MergeSort.jsx';
 import { getBubbleSortAnimations } from '../algorithmVis/BubbleSort.jsx';
 import { getSelectionSortAnimations } from '../algorithmVis/SelectionSort.jsx';
 
-const ARR_LEN = 100;
 const MIN_NUM = 5;
 const MAX_NUM = 80;
-const DELAY = 10;
+const DELAY = 15;
 const ACCESSED_COLOUR = 'turquoise';
 const SORTED_COLOUR = 'green';
 
 export default function SortVisualizer(props) {
+  
+  function handleSubmit(e) {
+    e.preventDefault();
+    
+    }
 
+  const InputEvent = (event) => {
+      const {name , value} = event.target;
+      setdata((preVal)=>{
+        return{
+          ...preVal,
+        [name]:value,
+        }
+        
+      })
+  }
+
+  const [data,setdata] = useState({
+    bars:"60",
+  })
+  
+  var ARR_LEN=data.bars;
   const [arr, setArr] = useState([]);
   const [isSorting, setIsSorting] = useState(false);
   const [isSorted, setIsSorted] = useState(false);
@@ -122,9 +142,17 @@ export default function SortVisualizer(props) {
       arrayBarStyle.backgroundColor = "";
     }
   }
-
+ 
+  
   return (
     <div className="nicheWala visualizer-container">
+
+{/*<form onSubmit={handleSubmit} className="nicheWala">
+      <input type="text" placeholder="enter no. of bars" name="bars" value={data.bars} onChange={InputEvent} />
+  {data.bars}
+    
+  </form>*/}
+
       <div className="nicheWala array-container" ref={containerRef}>
         {arr.map((barHeight, index) => (
           <div
@@ -145,7 +173,7 @@ export default function SortVisualizer(props) {
             </button>
           </li>
           
-          <li className="nicheWala" >
+          {/*<li className="nicheWala" >
             <button className="mx-2 btn-primary btn" onClick={mergeSort}>
               Merge sort
             </button>
@@ -161,19 +189,19 @@ export default function SortVisualizer(props) {
             <button className="mx-2 btn-primary btn" onClick={selectionSort}>
               Selection sort
             </button>
-          </li>
+          </li>*/}
 
 
           <li className="nicheWala" >  
             <button className="mx-2 btn-primary btn" onClick={insertionSort}>
-              Insertion sort
+              Visualise
             </button>
           </li>
-          <li className="nicheWala">
+          {/*<li className="nicheWala">
             <button className="btn btn-primary" onClick={quickSort}>
               Quick sort
             </button>
-        </li>
+        </li>*/}
        
         </ul>
       </footer>

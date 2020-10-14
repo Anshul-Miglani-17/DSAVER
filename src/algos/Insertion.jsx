@@ -3,7 +3,7 @@ import "../index.css";
 import web from "../images/insertion1.png";
 import Codecoll from "./Codecoll";
 import InsertionCode from "../codes/InsertionCode";
-
+import Visualizer from "../visualizer/Visualizer.js";
  
 const Insertion = () =>{
     return(
@@ -44,7 +44,7 @@ const Insertion = () =>{
                             <br/>
                             <br/>
                             
-                            <Codecoll code={<InsertionCode/>} />
+                            <Codecoll code={<InsertionCode/>} vis={<Visualizer />} />
 
 
                             

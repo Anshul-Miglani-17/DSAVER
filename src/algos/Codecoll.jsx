@@ -35,7 +35,8 @@ const Codecoll = (props) =>{
     </div>
     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div className="nicheWala card-body">
-        <Visualizer/>
+        {props.vis}
+        
       </div>
     </div>
   </div>
