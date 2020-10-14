@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import { NavLink } from "react-router-dom";
+import web from "../src/images/logo3.svg";
+
 
 const Navbar = () => {
   return (
@@ -8,7 +10,9 @@ const Navbar = () => {
       
           <div className="col-12 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light ">
-              <NavLink className="navbar_brand navbar-brand pl-4" to="">
+              <div ><img className="nicheWala" width="100" src={web} alt=""/></div>
+              <NavLink className="navbar_brand navbar-brand pl-1" to="">
+                
                 DSAVER
               </NavLink>
               <button
@@ -27,6 +31,7 @@ const Navbar = () => {
                 className="collapse navbar-collapse"
                 id="navbarSupportedContent"
               >
+                
                 <ul className="main navbar-nav ml-auto pr-4">
                   <li className="nav-item active">
                     <NavLink
