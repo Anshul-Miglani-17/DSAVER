@@ -11,7 +11,7 @@ const Card = (props) => {
   <div className="card-body">
   <h2 className="nmain card-title text-center pb-3">{props.name}</h2>
   <p className="card-text">{props.content}</p>
-  <NavLink to={props.link}  className="btn btn-primary d-flex justify-content-center mx-5">Explore</NavLink>
+  <NavLink to={props.link} target="_blank" className="btn btn-primary d-flex justify-content-center mx-5">Explore</NavLink>
   </div>        
 </div>
 
