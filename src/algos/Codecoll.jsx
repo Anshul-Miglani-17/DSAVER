@@ -2,6 +2,7 @@ import { findByDisplayValue } from "@testing-library/react";
 import React from "react";
 import "../index.css";
 import InsertionCode from "../codes/InsertionCode.jsx";
+import Visualizer from "../visualizer/Visualizer.js";
  
 const Codecoll = (props) =>{
     return(
@@ -34,7 +35,7 @@ const Codecoll = (props) =>{
     </div>
     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div className="nicheWala card-body">
-        Yh nahi hua
+        <Visualizer/>
       </div>
     </div>
   </div>

@@ -3,6 +3,7 @@ import "./Bubblecode.jsx"
 
 const Bubblecode = () => {
     var title = String.raw`
+    
     #include <stdio.h> 
     void swap(int *xp, int *yp) 
     { 
