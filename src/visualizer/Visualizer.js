@@ -10,7 +10,7 @@ const MIN_NUM = 5;
 const MAX_NUM = 80;
 const DELAY = 15;
 const ACCESSED_COLOUR = 'turquoise';
-const SORTED_COLOUR = 'green';
+const SORTED_COLOUR = '#00539CFF';
 
 export default function SortVisualizer(props) {
   
@@ -113,10 +113,10 @@ export default function SortVisualizer(props) {
     const arrayBars = containerRef.current.children;
     const arrayBarStyle = arrayBars[index].style;
     setTimeout(() => {
-      arrayBarStyle.backgroundColor = "black";
+      arrayBarStyle.backgroundColor = "#00B1D2FF";
     }, DELAY);
     setTimeout(() => {
-      arrayBarStyle.backgroundColor = '';
+      arrayBarStyle.backgroundColor = '#00539CFF';
     }, DELAY * 2);
   }
 
@@ -158,6 +158,7 @@ export default function SortVisualizer(props) {
           <div
             className="array-bar"
             style={{
+              
               height: `${barHeight}vmin`,
               width: `${100 / ARR_LEN}vw`,
             }}

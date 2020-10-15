@@ -10,7 +10,7 @@
   }
   
   .array-bar {
-    background-color: blueviolet;
+    background-color: red;
     border-radius: 0.5em;
     margin: 0.15%;
   }
@@ -18,7 +18,7 @@
   .app-footer {
     display: flex;
     overflow-x: auto;
-    background-color:lightgreen;
+    background-color:#FFD662FF;
     margin-top: auto;
   }
   
