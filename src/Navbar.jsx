@@ -9,9 +9,9 @@ const Navbar = () => {
     <>
       
           <div className="col-12 mx-auto">
-            <nav className="navbar navbar-expand-lg navbar-light ">
-              <div ><img className="nicheWala" width="100" src={web} alt=""/></div>
-              <NavLink className="navbar_brand navbar-brand pl-1" to="">
+            <nav className="navbar navbar-expand-lg navbar-light">
+              <div className="nicheWala"><img className="nicheWala logo-g" src={web} alt="logo"/></div>
+              <NavLink className="navbar_brand navbar-brand ml-2" to="">
                 
                 DSAVER
               </NavLink>

@@ -2,6 +2,8 @@ import React from "react";
 import web from "../images/selectionsort.png";
 import Codecoll from "./Codecoll";
 import Selectioncode from "../codes/Selectioncode"
+import Visualizer from "../visualizer/Visualizer.js";
+ 
  
 const Selection = () =>{
     return(
@@ -32,7 +34,7 @@ const Selection = () =>{
                             <p>To understand how Selection sort works, refer to the below image.    </p>
                             <div className="d-flex justify-content-center"><img src={web} alt="Selection img"/></div>
                             <br/>
-                            <Codecoll code={<Selectioncode/>}/>
+                            <Codecoll code={<Selectioncode/>} vis={<Visualizer />}/>
 
                         </h5>
                     </div>

@@ -34,6 +34,8 @@ const Contact = () => {
 
     </section>
 
+    
+
 {/* 
     <section id="header" style={{"height" : "30vh"}} className="d-flex align-items-center ">
       <div className="container-fluid nav_bg">

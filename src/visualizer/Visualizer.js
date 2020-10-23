@@ -174,7 +174,7 @@ export default function SortVisualizer(props) {
             </button>
           </li>
           
-          {/*<li className="nicheWala" >
+          <li className="nicheWala" >
             <button className="mx-2 btn-primary btn" onClick={mergeSort}>
               Merge sort
             </button>
@@ -190,19 +190,19 @@ export default function SortVisualizer(props) {
             <button className="mx-2 btn-primary btn" onClick={selectionSort}>
               Selection sort
             </button>
-          </li>*/}
+          </li>
 
 
           <li className="nicheWala" >  
             <button className="mx-2 btn-primary btn" onClick={insertionSort}>
-              Visualise
+              Insertion Sort
             </button>
           </li>
-          {/*<li className="nicheWala">
+          <li className="nicheWala">
             <button className="btn btn-primary" onClick={quickSort}>
               Quick sort
             </button>
-        </li>*/}
+        </li>
        
         </ul>
       </footer>

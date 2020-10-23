@@ -2,6 +2,8 @@ import React from "react";
 import web from "../images/bubblesort.png";
 import Codecoll from "./Codecoll";
 import Bubblecode from "../codes/Bubblecode"
+import Visualizer from "../visualizer/Visualizer.js";
+ 
  
 const Bubble = () =>{
     return(
@@ -36,7 +38,7 @@ const Bubble = () =>{
                             <p>To understand how Bubble sort works, refer to the below image.    </p>
                             <div className="d-flex justify-content-center"><img src={web} alt="insertion img"/></div>
                             <br/>
-                            <Codecoll code={<Bubblecode/>}/>
+                            <Codecoll code={<Bubblecode/>} vis={<Visualizer />}/>
 
                         </h5>
                     </div>

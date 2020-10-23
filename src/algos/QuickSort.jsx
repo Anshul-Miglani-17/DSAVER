@@ -3,6 +3,8 @@ import web from "../images/quicksort.png";
 import Codecoll from "./Codecoll";
 import Quicksortcode from "../codes/Quicksortcode"
 import Quicksortexample from "../codes/Quicksortexample";
+import Visualizer from "../visualizer/Visualizer.js";
+ 
  
 const Quicksort = () =>{
     return(
@@ -32,7 +34,7 @@ const Quicksort = () =>{
                             <p>To understand how partition works in QuickSort, refer to the below image.    </p>
                             <div className="d-flex justify-content-center"><img src={web} alt="QuickSort img"/></div>
                             <br/>
-                            <Codecoll code={<Quicksortcode/>}/>
+                            <Codecoll code={<Quicksortcode/>} vis={<Visualizer />}/>
 
                         </h5>
                     </div>

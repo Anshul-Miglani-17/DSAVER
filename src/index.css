@@ -40,6 +40,14 @@
   font-weight: bolder;
 }
 
+.logo-g{
+  width: 100px;
+}
+
+.logo-g:hover{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
 #header {
   width: 100%;
   height: 60vh;
@@ -91,7 +99,7 @@
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(-10px);
@@ -100,7 +108,7 @@
 
 @keyframes up-down {
   0% {
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
   100% {
     transform: translate(Y-10px);

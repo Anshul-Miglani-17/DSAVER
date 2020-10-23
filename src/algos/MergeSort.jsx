@@ -3,6 +3,8 @@ import web from "../images/mergesort.png";
 import Codecoll from "./Codecoll";
 import Mergesortcode from "../codes/Mergesortcode"
 import Mergesortexample from "../codes/Mergesortexample";
+import Visualizer from "../visualizer/Visualizer.js";
+ 
  
 const Mergesort = () =>{
     return(
@@ -32,7 +34,7 @@ const Mergesort = () =>{
                             <p>The following diagram shows the complete merge sort process for an example array (38, 27, 43, 3, 9, 82, 10). If we take a closer look at the diagram, we can see that the array is recursively divided in two halves till the size becomes 1. Once the size becomes 1, the merge processes comes into action and starts merging arrays back till the complete array is merged.</p>
                             <div className="d-flex justify-content-center"><img src={web} alt="MergeSort img"/></div>
                             <br/>
-                            <Codecoll code={<Mergesortcode/>}/>
+                            <Codecoll code={<Mergesortcode/>} vis={<Visualizer />}/>
 
                         </h5>
                     </div>
