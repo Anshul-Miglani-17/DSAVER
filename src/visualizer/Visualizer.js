@@ -8,15 +8,26 @@ import { getSelectionSortAnimations } from '../algorithmVis/SelectionSort.jsx';
 
 const MIN_NUM = 5;
 const MAX_NUM = 80;
-const DELAY = 15;
+
 const ACCESSED_COLOUR = 'turquoise';
 const SORTED_COLOUR = '#00539CFF';
 
 export default function SortVisualizer(props) {
   
+  
   function handleSubmit(e) {
     e.preventDefault();
-    
+     ARR_LEN=data.bars;
+    if(data.bars>200){
+      alert(
+       ' No. of bars should be less than 200.'
+      );
+    }
+    if(data.speed>1000){
+      alert(
+       ' Time should be less than 1000 ms (1sec).'
+      );
+    }
     }
 
   const InputEvent = (event) => {
@@ -31,9 +42,10 @@ export default function SortVisualizer(props) {
   }
 
   const [data,setdata] = useState({
-    bars:"60",
+    bars:'100',
+    speed:'15',
   })
-  
+  var DELAY = data.speed;
   var ARR_LEN=data.bars;
   const [arr, setArr] = useState([]);
   const [isSorting, setIsSorting] = useState(false);
@@ -43,6 +55,7 @@ export default function SortVisualizer(props) {
   useEffect(initialiseArray, []);
 
   function initialiseArray() {
+    
     if (isSorting) return;
     if (isSorted) resetArrayColour();
     setIsSorted(false);
@@ -145,14 +158,22 @@ export default function SortVisualizer(props) {
  
   
   return (
-    <div className="nicheWala visualizer-container">
+    <div className="nicheWala visualizer-container ">
 
-{/*<form onSubmit={handleSubmit} className="nicheWala">
-      <input type="text" placeholder="enter no. of bars" name="bars" value={data.bars} onChange={InputEvent} />
-  {data.bars}
-    
-  </form>*/}
-
+<div className="app-footer">
+<form onSubmit={handleSubmit} className="nicheWala">
+  Enter no. of bars -
+      <input className="mx-2" type="text" placeholder="enter no. of bars" name="bars" value={data.bars} onChange={InputEvent} />
+  
+ 
+  
+            Time (in ms) -
+            <input className="mx-2" type="text" placeholder="enter time in ms" name="speed" value={data.speed} onChange={InputEvent} />
+            <button className=" btn-primary btn mx-2" onClick={initialiseArray} >
+              set
+            </button>
+  </form>
+  </div>
       <div className="nicheWala array-container" ref={containerRef}>
         {arr.map((barHeight, index) => (
           <div
@@ -166,6 +187,7 @@ export default function SortVisualizer(props) {
           ></div>
         ))}
       </div>
+      
       <footer className="app-footer">
         <ul className="nicheWala">
           <li className="nicheWala">
