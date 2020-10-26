@@ -163,12 +163,12 @@ export default function SortVisualizer(props) {
 <div className="app-footer">
 <form onSubmit={handleSubmit} className="nicheWala">
   Enter no. of bars -
-      <input className="mx-2" type="text" placeholder="enter no. of bars" name="bars" value={data.bars} onChange={InputEvent} />
+      <input className="in-bor mx-2" type="text" placeholder="enter no. of bars" name="bars" value={data.bars} onChange={InputEvent} />
   
  
   
             Time (in ms) -
-            <input className="mx-2" type="text" placeholder="enter time in ms" name="speed" value={data.speed} onChange={InputEvent} />
+            <input className="in-bor mx-2" type="text" placeholder="enter time in ms" name="speed" value={data.speed} onChange={InputEvent} />
             <button className=" btn-primary btn mx-2" onClick={initialiseArray} >
               set
             </button>

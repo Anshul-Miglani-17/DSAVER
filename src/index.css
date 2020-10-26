@@ -17,7 +17,14 @@
 }
 .main {
   background-color: #FFD662FF !important;
+  border-bottom: 1px solid #FFD662FF;
+
 }
+
+.main :hover{
+  border-bottom: 1px solid red;
+}
+
 .navbar_brand {
   font-size: 2rem !important;
   font-family: "Playfair Display", serif;
@@ -26,7 +33,7 @@
 
 .active_menu {
   font-weight: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid red;
 }
 .nav-link {
   background-color: #FFD662FF !important;
