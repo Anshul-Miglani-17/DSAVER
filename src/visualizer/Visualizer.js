@@ -20,12 +20,12 @@ export default function SortVisualizer(props) {
      ARR_LEN=data.bars;
     if(data.bars>200){
       alert(
-       ' No. of bars should be less than 200.'
+       ' Recommendation : No. of bars should be less than 200.'
       );
     }
     if(data.speed>1000){
       alert(
-       ' Time should be less than 1000 ms (1sec).'
+       ' Recommendation : Time should be less than 1000 ms (1sec).'
       );
     }
     }
