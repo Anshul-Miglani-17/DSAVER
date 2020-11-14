@@ -6,7 +6,7 @@ import web from "../src/images/logo2.svg"
 const About = () => {
   return (
     <>
-      <section id="header" style={{"height" : "80vh"}} className="about-h d-flex align-items-center">
+      <section id="header" style={{"height" : "90vh"}} className="about-h d-flex align-items-center">
       <div className="container-fluid ">
         <div className="row ">
           <div className="col-11 mx-auto">
@@ -22,9 +22,9 @@ const About = () => {
                   </NavLink >
                 </div>
               </div>
-              <div className="col-lg-6 order-2 order-lg-2 header-img ">
+              <div className="col-lg-6 order-2 order-lg-2 header-img my-5 ">
                 
-                <img src={web} className="img-fluid animated" width="600" alt="Dsaver logo"/>
+                <img src={web}  className="img-fluid animated " width="600" alt="Dsaver logo"/>
               </div>
             </div>
           </div>
