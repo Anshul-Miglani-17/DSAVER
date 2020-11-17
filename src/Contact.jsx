@@ -21,14 +21,14 @@ const Contact = () => {
   function handleSubmitArpit(e) {
     e.preventDefault();
       alert(
-       ' chutiya'
+       'arpitg9671@gmail.com'
       );
   }
 
   function handleSubmitMam(e) {
     e.preventDefault();
       alert(
-       ' haaye mam!!'
+       ' sapnagambhir@gmail.com'
       );
   }
 
