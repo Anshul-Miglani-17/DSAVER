@@ -45,7 +45,7 @@ const Contact = () => {
                 <h1>Learn And Grow With <strong className="brand-name">DSAVER</strong></h1>
                 <h2 className="my-3">
                   <p className="objective"><strong>You can contact us :-</strong></p>
-                  <p>Mr. Anshul Miglani<br/>
+                  <p>Mr. Anshul Miglani (developer)<br/>
                    
                     <span className="mx-2 "><a style={{color: "white"}} href="https://www.instagram.com/anshul_miglani_/"  target="_blank" ><FontAwesomeIcon className="px-1 insta" icon={faInstagram} /></a></span>
                     <span className="mx-2"><a className="fontawe"  href="https://www.linkedin.com/in/anshul-miglani-36aa671b4" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></span>
@@ -57,7 +57,7 @@ const Contact = () => {
                     <span className="mx-2  "><a className="fontawe"  href="https://www.linkedin.com/in/arpit-garg-738a81194" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></span>
                     <span className="mx-2  "><a className="fontawe"  style={{color: "red"}} onClick={handleSubmitArpit}><FontAwesomeIcon icon={faGoogle} /></a></span>
                   <hr/></p>
-                  <p>Dr. Sapna Gambhir<br/>
+                  <p>Dr. Sapna Gambhir (mentor)<br/>
                   
                    
                     <span className="mx-2"><a className="fontawe"  href="https://www.linkedin.com/in/dr-sapna-gambhir-a593b18" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></span>

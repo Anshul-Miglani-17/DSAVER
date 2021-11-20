@@ -4,15 +4,15 @@
   }
   
   .array-container {
-    align-items: center;
+    align-items: end;
     display: flex;
     margin-top: auto;
   }
   
   .array-bar {
     background-color: red;
-    border-radius: 0.5em;
-    margin: 0.15%;
+    border-radius: 0.2em;
+    margin: 0.15%;  
   }
   
   .app-footer {
@@ -65,3 +65,7 @@
   background-color: skyblue;
 }
   
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

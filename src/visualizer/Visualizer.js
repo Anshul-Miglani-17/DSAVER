@@ -18,14 +18,14 @@ export default function SortVisualizer(props) {
   function handleSubmit(e) {
     e.preventDefault();
      ARR_LEN=data.bars;
-    if(data.bars>200){
+    if(data.bars>100){
       alert(
-       ' Recommendation : No. of bars should be less than 200.'
+       ' Recommendation : No. of bars should be less than 100.'
       );
     }
-    if(data.speed>1000){
+    if(data.speed>200){
       alert(
-       ' Recommendation : Time should be less than 1000 ms (1sec).'
+       ' Recommendation : Time should be less than 200 ms (0.2sec).'
       );
     }
     }
@@ -42,7 +42,7 @@ export default function SortVisualizer(props) {
   }
 
   const [data,setdata] = useState({
-    bars:'100',
+    bars:'30',
     speed:'15',
   })
   var DELAY = data.speed;
@@ -67,28 +67,40 @@ export default function SortVisualizer(props) {
     setArr(arr);
   }
 
+  function disableScroll() {
+    document.body.classList.add("stop-scrolling");
+}
+
+  function enableScroll() {
+      document.body.classList.remove("stop-scrolling");
+  }
   function mergeSort() {
-    const animations = getMergeSortAnimations(arr);
+    // disableScroll();
+    const animations =getMergeSortAnimations(arr);
     animateArrayUpdate(animations);
   }
 
   function insertionSort(props) {
+    // disableScroll();
     const animations = getInsertionSortAnimations(arr);
     animateArrayUpdate(animations);
     
   }
 
   function quickSort() {
+    // disableScroll();
     const animations = getQuickSortAnimations(arr);
     animateArrayUpdate(animations);
   }
 
   function bubbleSort() {
+    // disableScroll();
     const animations = getBubbleSortAnimations(arr);
     animateArrayUpdate(animations);
   }
 
   function selectionSort() {
+    // disableScroll();
     const animations = getSelectionSortAnimations(arr);
     animateArrayUpdate(animations);
   }
@@ -116,6 +128,7 @@ export default function SortVisualizer(props) {
           });
         }
       }, index * DELAY);
+
     });
     setTimeout(() => {
       animateSortedArray();
@@ -123,6 +136,7 @@ export default function SortVisualizer(props) {
   }
 
   function animateArrayAccess(index) {
+
     const arrayBars = containerRef.current.children;
     const arrayBarStyle = arrayBars[index].style;
     setTimeout(() => {
@@ -155,7 +169,7 @@ export default function SortVisualizer(props) {
       arrayBarStyle.backgroundColor = "";
     }
   }
- 
+  
   
   return (
     <div className="nicheWala visualizer-container ">
@@ -180,7 +194,7 @@ export default function SortVisualizer(props) {
             className="array-bar"
             style={{
               
-              height: `${barHeight}vmin`,
+              height: `${barHeight}vh`,
               width: `${100 / ARR_LEN}vw`,
             }}
             key={index}
@@ -191,13 +205,19 @@ export default function SortVisualizer(props) {
       <footer className="app-footer">
         <ul className="nicheWala">
           <li className="nicheWala">
-            <button className="btn-primary btn" onClick={initialiseArray}>
+            <button className="btn-primary btn"  onClick={initialiseArray}>
               Create new array
+              
             </button>
           </li>
+          {/* <li className="nicheWala">
+            <button className="  btn-primary btn"  onClick={enableScroll}>
+              scroll on when visualization complete
+            </button>
+          </li> */}
           
           <li className="nicheWala" >
-            <button className="mx-2 btn-primary btn" onClick={mergeSort}>
+            <button className=" mx-2 btn-primary btn stop-scrolling" onClick={mergeSort}>
               Merge sort
             </button>
           </li>

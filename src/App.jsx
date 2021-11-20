@@ -18,6 +18,7 @@ import QuickSort from "./algos/QuickSort"
 const App = () => {
   return (
     <>
+    
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home}></Route>
@@ -35,6 +36,7 @@ const App = () => {
         <Redirect to="/" />
       </Switch>
       <Footer/>
+
     </>
   );
 };

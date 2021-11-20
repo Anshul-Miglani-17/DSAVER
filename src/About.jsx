@@ -14,7 +14,7 @@ const About = () => {
               <div className="col-md-6 pb-5 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                 <h1>Learn And Grow With <strong className="brand-name">DSAVER</strong></h1>
                 <h2 className="my-3">
-                <p>DSAVER stands for Data Structure and Algorithm Visualizer.<br/>It is a learning platform for Data Structures and Algorithms.<br/>When we have started learning data structure and sorting algorithms we find it very difficult to understand on our own. Therefore, we decided to do this project. As, our objective for this project is to provide students a platform to learn and understand complex algorithms in easy and attractive manner.</p>
+                <p><br/>It is a learning platform for Data Structures and Algorithms. <br/><br/>When we have started learning data structure and sorting algorithms we find it very difficult to understand on our own. Therefore, we decided to do this project. As, our objective for this project is to provide students a platform to learn and understand complex algorithms in easy and attractive manner.</p>
                 </h2>
                 <div className="mt-3">
                   <NavLink to="/contact" className="btn-get-started ">

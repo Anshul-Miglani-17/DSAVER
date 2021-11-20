@@ -25,15 +25,16 @@ const Codecoll = (props) =>{
       </div>
     </div>
   </div>
+
   <div className="card">
     <div className="" id="headingTwo">
       <h2 className="codecollvis mb-0">
-        <button className="codecollvis btn btn-block text-mid collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button className="codecollvis btn btn-block text-mid collapsed" target="_blank" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <h3 className="codecollvis" >Visualisation</h3>
         </button>
       </h2>
     </div>
-    <div id="collapseTwo" className="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+    <div id="collapseTwo" className="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
       <div className="nicheWala card-body">
         {props.vis}
         
